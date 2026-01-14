@@ -259,7 +259,7 @@ li{
   padding-bottom: 10px;
   text-transform: none;
 }
-.about .author,.hero_images img{
+.about .author,.hero_images img,.contact_hero{
   margin: 15px auto;
   display: block;
   width: 400px;
@@ -267,6 +267,11 @@ li{
   object-fit: cover;
   object-position: 50% 100%;
   border-radius: 10px;
+}
+.contact_hero{
+  width: 80%;
+  object-position: 50% 50%;
+  height: 400px;
 }
 .hero_images{
   width: 80%;
@@ -279,6 +284,44 @@ li{
 .contact a{
   text-decoration: underline;
   color: black;
+}
+.contact-form{
+  max-width: 80vw;
+  margin: 20px auto 50px;
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+}
+.contact-form label{
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.contact-form input,.contact-form textarea{
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  font-weight: 600;
+  width: 80%;
+}
+.contact-form button{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--main-color);
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.contact-form button:hover{
+  color: #fff;
+  background-color: var(--main-color);
 }
 .faq-box{
   width: 80%;
