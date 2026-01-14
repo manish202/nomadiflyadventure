@@ -87,6 +87,7 @@ li{
 }
 .main-box{
   margin: 30px;
+  align-items: flex-start;
 }
 .main-box h1{
   text-transform: capitalize;
@@ -96,6 +97,14 @@ li{
 .main-box p{
   font-size: 20px;
   padding-bottom: 10px;
+  font-weight: 600;
+}
+.main-box ul li{
+  list-style-type: disc;
+  list-style-position: inside;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
 .main-box .box{
   width: 50%;
@@ -123,6 +132,13 @@ li{
 }
 .main-box.even .box:first-child{
   order: 2;
+}
+.extra_info{
+  border: 2px solid var(--main-color);
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
 }
 .footer{
   justify-content: space-around;
@@ -404,6 +420,9 @@ li{
   }
   .main-box{
     margin: 20px;
+  }
+  .main-box h1{
+    font-size: 2em;
   }
   .services{
     max-width: 95%;
