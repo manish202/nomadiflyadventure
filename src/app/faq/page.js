@@ -47,6 +47,11 @@ const Faq = () => {
           desc="Yes. Nomadifly Adventure is a fully licensed operator registered with the Department of Tourism (License No: 06013132) Payments are made via secure bank transfers to our official business account, ensuring your funds are protected and tracked by the Royal Monetary Authority of Bhutan."
         />
       </div>
+      <div className="d-flex hero_images">
+        <img src="/images/faq_page_hero.jpg" alt="bottom image 1" />
+        <img src="/images/faq_page_hero2.jpg" alt="bottom image 2" />
+        <img src="/images/faq_page_hero3.jpg" alt="bottom image 3" />
+      </div>
       <div className="d-flex mb-25"><ContactBtn /></div>
       <Footer />
     </>

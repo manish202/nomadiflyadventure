@@ -257,8 +257,9 @@ li{
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
+  text-transform: none;
 }
-.about .author{
+.about .author,.hero_images img{
   margin: 15px auto;
   display: block;
   width: 400px;
@@ -266,6 +267,14 @@ li{
   object-fit: cover;
   object-position: 50% 100%;
   border-radius: 10px;
+}
+.hero_images{
+  width: 80%;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+.hero_images img{
+  width: 30%;
 }
 .contact a{
   text-decoration: underline;
@@ -329,7 +338,7 @@ li{
   .team-box .card{
     width: 45%;
   }
-  .about .author{
+  .about .author,.hero_images img{
     width: 85%;
     height: 250px;
   }
