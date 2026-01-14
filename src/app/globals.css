@@ -13,7 +13,13 @@ li{
   list-style-type: none;
 }
 :root{
-  --main-color: #1F2D24;
+  --main-color: #535c68;
+}
+.logo{
+  flex-direction: column;
+}
+.logo i{
+  font-weight: 600;
 }
 .logo img{
   width: 120px;
@@ -139,13 +145,9 @@ li{
 .credit{
   padding: 15px;
   background-color: var(--main-color);
-  color: gray;
+  color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
-}
-.credit a{
-  color: #fff;
-  text-decoration: underline;
 }
 .services{
   max-width: 80%;
@@ -247,13 +249,23 @@ li{
   text-transform: capitalize;
   color: var(--main-color);
 }
-.about h2{
-  font-size: 30px;
+.about ul li{
+  list-style-type: disc;
+  list-style-position: inside;
 }
-.about p,.contact p{
+.about p,.contact p,.about ul li{
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
+}
+.about .author{
+  margin: 15px auto;
+  display: block;
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 100%;
+  border-radius: 10px;
 }
 .contact a{
   text-decoration: underline;
@@ -316,6 +328,10 @@ li{
   }
   .team-box .card{
     width: 45%;
+  }
+  .about .author{
+    width: 85%;
+    height: 250px;
   }
 }
 @media (max-width:430px){

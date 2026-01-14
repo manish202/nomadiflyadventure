@@ -11,8 +11,8 @@ const MenuItem = ({path,name}) => {
 const SocialMedia = () => {
     return(
         <div className="social-media">
-            <SocialIcon label="instagram icon" url="https://www.instagram.com/annu.sia/" cls="fa-brands fa-instagram" />
-            <SocialIcon label="threads icon" url="https://www.threads.com/@annu.sia" cls="fa-brands fa-threads" />
+            <SocialIcon label="instagram icon" url="https://www.instagram.com/nomadifly" cls="fa-brands fa-instagram" />
+            <SocialIcon label="facebook icon" url="https://www.facebook.com/share/1Aw7YAaPXV/" cls="fa-brands fa-facebook" />
             <SocialIcon label="location icon" url="https://maps.app.goo.gl/fx1oyQaNd5DGA7XMA" cls="fa-solid fa-location-dot" />
             <SocialIcon label="email icon" url="mailto:contactannusia@gmail.com" cls="fa-solid fa-at" />
             <SocialIcon label="whatsapp icon" url="https://wa.me/+919289262706" cls="fa-brands fa-whatsapp" />
@@ -26,7 +26,10 @@ const Navbar = () => {
         <>
             <header className="d-flex header">
                 <button onClick={() => updtToggle(!toggle)} type="button" className="btn toggle-btn"><i className="fa-solid fa-bars"></i></button>
-                <Link href="/" className="logo"><img src="/images/logo.png" alt="logo" /></Link>
+                <Link href="/" className="d-flex logo">
+                    <img src="/images/logo.png" alt="logo" />
+                    <i>An adventure of a lifetime in Bhutan</i>
+                </Link>
                 <SocialMedia />
                 <ContactBtn />
             </header>
@@ -43,4 +46,16 @@ const Navbar = () => {
         </>
     )
 }
-export {SocialMedia,ContactBtn,Navbar}
+const FaqCard = ({title,desc}) => {
+  let [toggle,updtToggle] = useState(false);
+  return(
+    <div className="card">
+      <div className="d-flex faq-title" onClick={() => updtToggle(!toggle)}>
+        <h3>{title}</h3>
+        <i className="fa-solid fa-plus"></i>
+      </div>
+      <div className={`faq-desc ${toggle ? 'active':''}`}>{desc}</div>
+    </div>
+  )
+}
+export {SocialMedia,ContactBtn,Navbar,FaqCard}
