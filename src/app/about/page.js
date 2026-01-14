@@ -2,15 +2,15 @@ import styles from "./page.module.css";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
-  title: "Home - nomadifly adventure",
+  title: "About - nomadifly adventure",
 }
 
-const Home = () => {
+const About = () => {
   return (
     <>
       <Navbar />
-      <h1>Home page</h1>
+      <h1>About page</h1>
     </>
   )
 }
-export default Home;
+export default About;
