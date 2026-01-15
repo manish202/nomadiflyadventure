@@ -52,7 +52,7 @@ const FaqCard = ({title,desc}) => {
     <div className="card">
       <div className="d-flex faq-title" onClick={() => updtToggle(!toggle)}>
         <h3>{title}</h3>
-        <i className="fa-solid fa-plus"></i>
+        <i className={`fa-solid ${toggle ? 'fa-minus':'fa-plus'}`}></i>
       </div>
       <div className={`faq-desc ${toggle ? 'active':''}`}>{desc}</div>
     </div>

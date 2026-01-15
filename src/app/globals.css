@@ -328,6 +328,7 @@ li{
   object-fit: cover;
   object-position: 50% 100%;
   border-radius: 10px;
+  transition: all ease 0.2s;
 }
 .contact_hero{
   width: 80%;
@@ -342,6 +343,9 @@ li{
 .hero_images img{
   width: 30%;
 }
+.hero_images img:hover,.about .author:hover{
+  border-radius: 50px;
+}
 .trek_cards{
   margin: 20px auto;
 }
@@ -352,6 +356,11 @@ li{
   margin: 10px 20px;
   border: 2px solid var(--main-color);
   border-radius: 10px;
+  transition: all ease 0.2s;
+}
+.trek_cards .card:hover,.contact-card:hover{
+  color: #fff;
+  background-color: var(--main-color);
 }
 .trek_cards .card i{
   font-size: 3em;
@@ -412,6 +421,7 @@ li{
   margin: 10px;
   font-size: 20px;
   width: 300px;
+  transition: all ease 0.2s;
 }
 .faq-box{
   width: 80%;
