@@ -289,13 +289,30 @@ li{
   object-position: 50% 50%;
   height: 400px;
 }
-.hero_images{
+.hero_images,.trek_cards{
   width: 80%;
   margin: 0px auto;
   flex-wrap: wrap;
 }
 .hero_images img{
   width: 30%;
+}
+.trek_cards{
+  margin: 20px auto;
+}
+.trek_cards .card{
+  width: 300px;
+  min-height: 230px;
+  padding: 20px;
+  margin: 10px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+}
+.trek_cards .card i{
+  font-size: 3em;
+}
+.trek_cards .card p{
+  font-weight: 600;
 }
 .contact a{
   text-decoration: underline;

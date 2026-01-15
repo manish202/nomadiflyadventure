@@ -58,4 +58,22 @@ const FaqCard = ({title,desc}) => {
     </div>
   )
 }
-export {SocialMedia,ContactBtn,Navbar,FaqCard}
+const ContactBox = () => {
+    return (
+        <div className="d-flex contact-box">
+            <div className="contact-card">
+                <h3><i className="fa-solid fa-envelope"></i> EMAIL US</h3>
+                <p>info@nomadiflyadventure.com</p>
+            </div>
+            <div className="contact-card">
+                <h3><i className="fa-solid fa-phone"></i> CALL US</h3>
+                <p>+975 16108691</p>
+            </div>
+            <div className="contact-card">
+                <h3><i className="fa-solid fa-location-dot"></i> ADDRESS</h3>
+                <p>Tshalu Lam, Babesa, Thimphu</p>
+            </div>
+        </div>
+    )
+}
+export {SocialMedia,ContactBtn,Navbar,FaqCard,ContactBox}
