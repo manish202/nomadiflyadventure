@@ -158,6 +158,51 @@ li{
   font-size: 20px;
   letter-spacing: 1px;
 }
+.loading_anim{
+
+}
+.loading_anim .loader-wrapper {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(26, 26, 26, 0.95);
+  z-index: 1000;
+  animation: fadeOut 2s ease 2s forwards;
+}
+.loading_anim .spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #444;
+  border-top-color: #00f7ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+.loading_anim .loading-text {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+}
 .credit{
   padding: 15px;
   background-color: var(--main-color);
