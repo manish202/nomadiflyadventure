@@ -14,8 +14,8 @@ const SocialMedia = () => {
             <SocialIcon label="instagram icon" url="https://www.instagram.com/nomadifly" cls="fa-brands fa-instagram" />
             <SocialIcon label="facebook icon" url="https://www.facebook.com/share/1Aw7YAaPXV/" cls="fa-brands fa-facebook" />
             <SocialIcon label="location icon" url="https://maps.app.goo.gl/fx1oyQaNd5DGA7XMA" cls="fa-solid fa-location-dot" />
-            <SocialIcon label="email icon" url="mailto:contactannusia@gmail.com" cls="fa-solid fa-at" />
-            <SocialIcon label="whatsapp icon" url="https://wa.me/+919289262706" cls="fa-brands fa-whatsapp" />
+            <SocialIcon label="email icon" url="mailto:info@nomadiflyadventure.com" cls="fa-solid fa-at" />
+            <SocialIcon label="whatsapp icon" url="https://wa.me/+97516108691" cls="fa-brands fa-whatsapp" />
         </div>
     )
 }

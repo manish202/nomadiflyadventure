@@ -36,7 +36,7 @@ const Home = () => {
           <ContactBtn />
         </div>
         <div className="box">
-          <img src="/images/home_page_hero.jpeg" alt="Welcome to the Kingdom of Bhutan." />
+          <img src="/images/home_page_hero5.jpg" alt="Welcome to the Kingdom of Bhutan." />
         </div>
       </section>
       <div className="d-flex hero_images">
@@ -59,7 +59,7 @@ const Home = () => {
           <ContactBtn />
         </div>
         <div className="box">
-          <img src="/images/home_page_hero5.jpg" alt="Bhutan: The Kingdom of the Clouds" />
+          <img src="/images/home_page_hero.jpg" alt="Bhutan: The Kingdom of the Clouds" />
         </div>
       </section>
       <ContactBox />
